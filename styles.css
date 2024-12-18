@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+    line-height: 1.6;
+    padding-bottom: 60px; /* Add space for footer at the bottom */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+header .company-name {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.total-stats-header {
+    display: flex;
+    gap: 20px;
+}
+
+.total-stats-header div {
+    background-color: #333;
+    padding: 20px;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.total-stats-header div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.staff-cards {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px; /* Ensure the cards aren't hidden under the footer */
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    width: 250px; /* Adjusted width for better spacing */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card .employee-name {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00bcd4;
+    transition: color 0.3s ease;
+}
+
+.card .employee-name:hover {
+    color: #4caf50;
+}
+
+.card .total-sales, .card .total-amount {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #555;
+    height: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
+    font-size: 16px;
+}
+
+.best-performer {
+    border: 2px solid #00bcd4;
+    background-color: #263238;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.best-performer:hover {
+    background-color: #1e2a2f;
+    border-color: #4caf50;
+}
+
+.golden-employee-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.golden-employee-card {
+    border: 2px solid gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+}
+
+.green-outline-card {
+    border: 2px solid green;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
+.stars {
+    text-align: center;
+    font-size: 20px;
+    color: gold;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+footer .copyright {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .data-updating {
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+}
