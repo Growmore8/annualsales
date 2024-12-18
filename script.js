@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Sample employee data with joining date and other details
     const employees = [
-        { name: "R. Kushalini", image: "assets/Kusha.png", totalSales: 24, totalAmount: 5724, offerReached: false, count100: 11, count200: 11, count1000: 2, joiningDate: '2024-02-24' },
+        { name: "R. Kushalini", image: "assets/Venu.png", totalSales: 24, totalAmount: 5724, offerReached: false, count100: 11, count200: 11, count1000: 2, joiningDate: '2024-02-24' },
         { name: "P. Venujan", image: "assets/Venu.png", totalSales: 22, totalAmount: 4714, offerReached: false, count100: 14, count200: 6, count1000: 2, joiningDate: '2024-04-19' },
         { name: "T. Dinushan", image: "assets/Dinu.png", totalSales: 21, totalAmount: 4609.32, offerReached: false, count100: 6, count200: 14, count1000: 1, joiningDate: '2024-04-01' },
         { name: "K. Sharmila", image: "assets/Sharmi.png", totalSales: 16, totalAmount: 3987, offerReached: false, count100: 2, count200: 13, count1000: 1, joiningDate: '2024-06-06' },
