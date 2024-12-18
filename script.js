@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "A. Marcuss", image: "assets/Mar.png", totalSales: 0, totalAmount: 11, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-10-08' },
         { name: "G. Vilusha", image: "assets/Vilusha.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
         { name: "K. Janahath", image: "assets/Jahath.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
-        { name: "P. Naddison", image: "assets/Nadhi.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
-        { name: "Ramya", image: "assets/Ramya.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' },
+        { name: "P. Nadiison", image: "assets/Nadhi.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
+        { name: "P. Ramya", image: "assets/Ramya.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' },
         { name: "A. Lakshan", image: "assets/Lakshan.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-20' },
-        { name: "D. Prabshini", image: "assets/Prabashini.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' },
-        { name: "Dilani", image: "assets/Dilani.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' }
+        { name: "D. Prabashini", image: "assets/Prabashini.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' },
+        { name: "S. Dilani", image: "assets/Dilani.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' }
     ];
 
     // Format number with commas for thousands and two decimal places (like $100,000.00)
