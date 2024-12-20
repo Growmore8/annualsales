@@ -38,14 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Find the employee with the highest total sales amount (Golden Employee)
     const highestTotalSalesAmountEmployee = employees.reduce((max, employee) => (employee.totalAmount > max.totalAmount ? employee : max), employees[0]);
 
-    // Sort employees with the highest total sales amount first
-    employees.sort((a, b) => b.totalAmount - a.totalAmount);
-
-    // Sort employees with the highest total sales amount first
-    employees.sort((a, b) => b.totalSales - a.totalSales);
-
     // Find the employee with the highest sale count (Green Outline)
     const highestSaleCountEmployee = employees.reduce((max, employee) => (employee.totalSales > max.totalSales ? employee : max), employees[0]);
+
+    // Sort employees: highest total amount first, then highest total sales count
+    employees.sort((a, b) => {
+        if (a === highestTotalSalesAmountEmployee) return -1; // Golden Employee first
+        if (b === highestTotalSalesAmountEmployee) return 1;
+
+        if (a === highestSaleCountEmployee) return -1; // Highest Sale Count second
+        if (b === highestSaleCountEmployee) return 1;
+
+        return b.totalAmount - a.totalAmount; // Default by total amount
+    });
 
     const staffCardsContainer = document.querySelector('.staff-cards');
     const totalSalesCount = document.querySelector('.total-sales-count p');
