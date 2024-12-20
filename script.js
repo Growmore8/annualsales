@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "A. Marcuss", image: "assets/Mar.png", totalSales: 1, totalAmount: 211, offerReached: false, count100: 0, count200: 1, count1000: 0, joiningDate: '2024-10-08' },
         { name: "G. Vilusha", image: "assets/Vilusha.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
         { name: "K. Janahath", image: "assets/Jahath.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
-        { name: "P. Nadiison", image: "assets/Nadhi.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
+        { name: "P. Nadiison", image: "assets/Nadhi.png", totalSales: 0, totalAmount: 10, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-25' },
         { name: "P. Ramya", image: "assets/Ramya.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' },
         { name: "A. Lakshan", image: "assets/Lakshan.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-11-20' },
         { name: "D. Prabashini", image: "assets/Prabashini.png", totalSales: 0, totalAmount: 0, offerReached: false, count100: 0, count200: 0, count1000: 0, joiningDate: '2024-12-02' },
