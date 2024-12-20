@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sort employees with the highest total sales amount first
     employees.sort((a, b) => b.totalAmount - a.totalAmount);
 
+    // Sort employees with the highest total sales amount first
+    employees.sort((a, b) => b.totalSales - a.totalSales);
+
     // Find the employee with the highest sale count (Green Outline)
     const highestSaleCountEmployee = employees.reduce((max, employee) => (employee.totalSales > max.totalSales ? employee : max), employees[0]);
 
