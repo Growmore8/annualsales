@@ -1,66 +1,77 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Dark background */
-    color: white;
+    background-color: #101010; /* Dark background */
+    color: #e0e0e0; /* Light text */
     line-height: 1.6;
-    padding-bottom: 60px; /* Add space for footer at the bottom */
+    padding-bottom: 60px; /* Space for footer */
 }
 
+/* Header Styles */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
-    background-color: #000;
-    color: white;
+    background-color: #151515;
+    color: #e0e0e0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     align-items: center;
+    flex-direction: column;
 }
 
 header .company-name {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ff2e63; /* Squid Game red accent */
 }
 
+/* Total Stats Section */
 .total-stats-header {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .total-stats-header div {
-    background-color: #333;
+    background-color: #1a1a1a;
     padding: 20px;
     width: 200px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
+    color: #00ffab; /* Neon green accent */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .total-stats-header div:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+/* Staff Cards Section */
 .staff-cards {
     display: flex;
     gap: 20px;
     padding: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 80px; /* Ensure the cards aren't hidden under the footer */
+    margin-bottom: 80px;
 }
 
 .card {
-    background-color: #333;
+    background-color: #1f1f1f;
     padding: 20px;
-    width: 250px; /* Adjusted width for better spacing */
+    width: 250px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -69,6 +80,8 @@ header .company-name {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    color: #e0e0e0;
+    position: relative;
 }
 
 .card:hover {
@@ -76,28 +89,42 @@ header .company-name {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+/* Player Number */
+.card::before {
+    content: attr(data-player-number);
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff2e63;
+    background: #151515;
+    padding: 5px 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 46, 99, 0.5);
+}
+
+/* Employee Image */
 .card img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    border: 3px solid #ff2e63;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card img:hover {
     transform: scale(1.1);
+    border-color: #00ffab;
 }
 
+/* Text and Progress Bar */
 .card .employee-name {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 20px;
     font-weight: bold;
-    color: #00bcd4;
-    transition: color 0.3s ease;
-}
-
-.card .employee-name:hover {
-    color: #4caf50;
+    margin-top: 10px;
+    color: #00ffab;
 }
 
 .card .total-sales, .card .total-amount {
@@ -107,7 +134,7 @@ header .company-name {
 }
 
 .progress-bar {
-    background-color: #555;
+    background-color: #333;
     height: 12px;
     border-radius: 6px;
     margin-top: 15px;
@@ -115,78 +142,30 @@ header .company-name {
 }
 
 .progress {
-    background-color: #4caf50;
+    background-color: #ff2e63;
     height: 100%;
     border-radius: 6px;
 }
 
-.status {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #28a745;
-    font-size: 16px;
-}
-
-.best-performer {
-    border: 2px solid #00bcd4;
-    background-color: #263238;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.best-performer:hover {
-    background-color: #1e2a2f;
-    border-color: #4caf50;
-}
-
-.golden-employee-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: gold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.golden-employee-card {
-    border: 2px solid gold;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
-}
-
-.green-outline-card {
-    border: 2px solid green;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
-}
-
-.stars {
-    text-align: center;
-    font-size: 20px;
-    color: gold;
-}
-
+/* Footer Styles */
 footer {
-    background-color: #000;
-    color: white;
+    background-color: #151515;
+    color: #e0e0e0;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
 }
-
-footer .copyright {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-footer .data-updating {
-    color: green;
+.golden-employee-text {
+    font-size: 20px;
     font-weight: bold;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 14px;
+    color: gold;
+    text-align: center;
+    margin-bottom: 15px;
 }
+
