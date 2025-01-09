@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Performance Dashboard</title>
+    <title>Employee Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="company-name">
-            Grow More Solutions (Pvt) Ltd.  Annual Sales Summary 2024
+        <div class="header-container">
+            <h1 class="company-name">Perfomance Portal-Annual</h1>
         </div>
-        <div class="total-stats-header">
-            <div class="total-sales-count">
-                <h3>Total Sales Count</h3>
-                <p>100</p> <!-- Total sales count will be dynamically updated -->
-            </div>
-            <div class="total-amount-usd">
-                <h3>Total Amount (USD)</h3>
-                <p>$10,000.00</p> <!-- Total amount will be dynamically updated -->
-            </div>
+        <!-- Year Selection Below Header -->
+        <div class="year-selection">
+            <label for="year-select">Select Year: </label>
+            <select id="year-select">
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+            </select>
         </div>
     </header>
-    
-    <section class="staff-cards">
-        <!-- Employee cards will be dynamically added here by JavaScript -->
+
+    <!-- Total Stats Section -->
+    <section class="total-stats">
+        <div class="total-stats-header">
+            <div class="total-stats-item">
+                <h3>Total Sales</h3>
+                <p class="total-sales-count">0</p>
+            </div>
+            <div class="total-stats-item">
+                <h3>Total Amount</h3>
+                <p class="total-amount-usd">$0.00</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Staff Cards Section -->
+    <section class="staff-cards"></section>
+
+    <!-- Footer Section with Copyright -->
     <footer>
-        <div class="copyright">
-            &copy; 2024 Grow More Solutions (Pvt) Ltd. All rights reserved.
-        </div>
-        <div class="data-updating">
-            Data Updating...
-        </div>
+        <p>&copy; 2025 Grow More Solutions (Pvt) Ltd. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
